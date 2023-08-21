@@ -2,10 +2,10 @@
 
 
 
-function Pokecard(pokemon) {
+function Pokecard({ pokemon }) {
   console.log("POKEMON FOR POKECARD>>>>>", pokemon);
-  const pokePicture = `https://raw.githubusercontent.com/
-    PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
+  const pokePicture = `https://raw.githubusercontent.com/PokeAPI
+    /sprites/master/sprites/pokemon/${pokemon.id}.png`;
 
   return(
     <div>

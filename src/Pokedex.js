@@ -6,7 +6,7 @@ function Pokedex({ pokemon }) {
   console.log("POKEMON FOR POKEDEX>>>>>", pokemon);
 
   return(
-    pokemon.map(p => <Pokecard pokemon={ pokemon }/>)
+    pokemon.map(p => <Pokecard pokemon={ p }/>)
   );
 }
 
