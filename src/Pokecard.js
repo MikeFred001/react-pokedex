@@ -3,7 +3,7 @@
 
 
 function Pokecard(pokemon) {
-  console.log("POKEMON>>>>>", pokemon);
+  console.log("POKEMON FOR POKECARD>>>>>", pokemon);
   const pokePicture = `https://raw.githubusercontent.com/
     PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
 

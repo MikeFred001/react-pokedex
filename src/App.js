@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Pokecard from "./Pokecard.js"
+import Pokedex from "./Pokedex.js"
 
 function App() {
 
