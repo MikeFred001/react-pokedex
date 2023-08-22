@@ -1,12 +1,11 @@
 import Pokecard from "./Pokecard.js"
 
 
-
-function Pokedex({ pokemon }) {
-  console.log("POKEMON FOR POKEDEX>>>>>", pokemon);
-
+/** Generates a pokecard for each pokemon */
+function Pokedex({ pokemons }) {
   return(
-    pokemon.map(p => <Pokecard pokemon={ p }/>)
+    pokemons.map(p => <Pokecard id={ p.id } name={p.name} type={p.type}
+                base_experience={p.base_experience}/>)
   );
 }
 

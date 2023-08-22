@@ -1,0 +1,10 @@
+
+.Poke-card {
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+}

@@ -1,18 +1,16 @@
+import "./Pokecard.css"
 
-
-
-
-function Pokecard({ pokemon }) {
-  console.log("POKEMON FOR POKECARD>>>>>", pokemon);
+/** Generates a pokecard from an object of pokemon data */
+function Pokecard({ id, name, type, base_experience }) {
   const pokePicture = `https://raw.githubusercontent.com/PokeAPI
-    /sprites/master/sprites/pokemon/${pokemon.id}.png`;
+    /sprites/master/sprites/pokemon/${id}.png`;
 
   return(
-    <div>
-      <h3>{ pokemon.name }</h3>
+    <div className="Poke-card">
+      <h3>{ name }</h3>
       <img src={ pokePicture }></img>
-      <p>Type: { pokemon.type }</p>
-      <p>EXP: { pokemon.base_experience }</p>
+      <p>Type: { type }</p>
+      <p>EXP: { base_experience }</p>
     </div>
   );
 }
