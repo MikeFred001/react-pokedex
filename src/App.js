@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Pokecard from "./Pokecard.js"
-import Pokedex from "./Pokedex.js"
+import Pokecard from "./Pokecard.js";
+import Pokedex from "./Pokedex.js";
+import Pokegame from "./Pokegame.js";
+import _ from lodash;
 
 const POKEMON_DATA = [
   {id: 4,   name: 'Charmander', type: 'fire',     base_experience: 62},
@@ -15,9 +17,8 @@ const POKEMON_DATA = [
 ];
 
 function App() {
-
   return (
-   <Pokedex pokemons={ POKEMON_DATA }/>
+   <Pokegame pokemons={ POKEMON_DATA }/>
   );
 }
 
